@@ -40,7 +40,6 @@ namespace ProjetoCondominioSmart.ViewModels
             set => SetProperty(ref icon, value);
         }
 
-   
 
         private string _buttonColorCaixa;
         public string ButtonColorCaixa
@@ -49,9 +48,6 @@ namespace ProjetoCondominioSmart.ViewModels
             set { SetProperty(ref _buttonColorCaixa, value); }
         }
 
-
-
-      
 
         bool isBusy;
 
@@ -156,33 +152,9 @@ namespace ProjetoCondominioSmart.ViewModels
 
             this.Title = $"Default";
         }
-
-        #region ATRIBUTOS MENU
-        string _descricaoCaixa = string.Empty;
-        public string DescricaoCaixa
-        {
-            get => _descricaoCaixa;
-            set => SetProperty(ref _descricaoCaixa, value);
-        }
-
-        string _descricaoCaixa2 = string.Empty;
-        public string DescricaoCaixa2
-        {
-            get => _descricaoCaixa2;
-            set => SetProperty(ref _descricaoCaixa2, value);
-        }
-
-        private string _buttonColorConfiguracao = string.Empty;
-        public string ButtonColorConfiguracao
-        {
-            get => _buttonColorConfiguracao;
-            set => SetProperty(ref _buttonColorConfiguracao, value);
-        }
-
-        #endregion
-
         public BaseViewModel()
         {
+
         }
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)

@@ -32,7 +32,7 @@ namespace ProjetoSmartList
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("/PageTeste");
+            await NavigationService.NavigateAsync("LoginPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -40,6 +40,7 @@ namespace ProjetoSmartList
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterPopupNavigationService();
             containerRegistry.RegisterForNavigation<PageTeste, VMTeste>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginViewModel>();
         }
     }
 }
